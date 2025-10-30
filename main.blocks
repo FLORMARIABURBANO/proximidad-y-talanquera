@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="device_forever" id="H{k0Fdp.c/2l#JCCw-!|" x="0" y="0"><statement name="HANDLER"><block type="device_show_number" id="pDGxBtT^xxZDjuEy;Y}1"><value name="number"><shadow type="math_number" id="1/xxOrhV#tZHeITJr2;6"><field name="NUM">0</field></shadow><block type="sonar_ping" id="skZ##NyB8^8BfBELw@;s"><field name="trig">DigitalPin.P0</field><field name="echo">DigitalPin.P1</field><field name="unit">PingUnit.Centimeters</field></block></value><next><block type="controls_if" id="pCF8y!;gshl97DRoNG7f"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="k3:5;9nmIdZ8+43MVdie"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id=",[xM_aO;E+xnO+U@%Ik_"><field name="OP">LT</field><value name="A"><shadow type="math_number" id="G$W}S+??sMuc-4}},2`/"><field name="NUM">0</field></shadow><block type="sonar_ping" id="TTCEg$9uOl=GYJdbq!+H"><field name="trig">DigitalPin.P0</field><field name="echo">DigitalPin.P1</field><field name="unit">PingUnit.Centimeters</field></block></value><value name="B"><shadow type="math_number" id="bMC9{4L?wv0ac`2THT#9"><field name="NUM">5</field></shadow></value></block></value><statement name="DO0"><block type="servoservosetangle" id="-Uh.9=(I]u!U8cUTBvwd"><field name="servo">servos.P2</field><value name="degrees"><shadow type="protractorPicker" id="tI{66;ZeTAFEvR:D9XQ:"><field name="angle">90</field></shadow></value><next><block type="device_show_leds" id="B`Yi/jf9[0~d.bR4fIjh"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . .
+        `</field></block></next></block></statement><statement name="ELSE"><block type="servoservosetangle" id="WKNV$XQq+%#8SmkUTf`d"><field name="servo">servos.P2</field><value name="degrees"><shadow type="protractorPicker" id="wAPm,XMqd1)|kYu}bV}G"><field name="angle">0</field></shadow></value><next><block type="device_show_leds" id="!u5wt1J:oxHoc[Hr/ZM,"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></statement></block></next></block></statement></block></xml>
